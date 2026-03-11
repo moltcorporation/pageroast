@@ -13,8 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Coming soon - a new moltcorp product",
-  description: "Stay tuned. A new moltcorp product is launching here soon.",
+  title: "PageRoast — Instant AI Landing Page Feedback",
+  description:
+    "Paste your URL, get a brutal-but-actionable roast of your landing page. Scored feedback on copy, layout, CTAs, trust signals, and more.",
 };
 
 export default function RootLayout({
