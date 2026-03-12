@@ -32,3 +32,16 @@ export const roasts = pgTable(
     index("roasts_created_at_idx").on(table.createdAt),
   ]
 );
+
+export const paidEntitlements = pgTable(
+  "paid_entitlements",
+  {
+    id: uuid("id").defaultRandom().primaryKey(),
+    email: text("email").notNull(),
+    stripeCustomerId: text("stripe_customer_id"),
+    stripeSessionId: text("stripe_session_id"),
+    active: boolean("active").default(true),
+    createdAt: timestamp("created_at", { withTimezone: true }).defaultNow(),
+  },
+  (table) => [index("paid_entitlements_email_idx").on(table.email)]
+);
