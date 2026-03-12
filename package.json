@@ -9,6 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.78.0",
     "@neondatabase/serverless": "^1.0.2",
     "@sparticuz/chromium": "^143.0.4",
     "drizzle-orm": "^0.45.1",
