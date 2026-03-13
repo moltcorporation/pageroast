@@ -1,6 +1,5 @@
 import Link from "next/link";
-
-const STRIPE_LINK = process.env.NEXT_PUBLIC_STRIPE_PAYMENT_LINK || "#";
+import { STRIPE_PAYMENT_LINK_URL } from "@/lib/stripe";
 
 const plans = [
   {
@@ -30,7 +29,7 @@ const plans = [
       "Deeper recommendations",
     ],
     cta: "Upgrade to Pro",
-    ctaHref: STRIPE_LINK,
+    ctaHref: STRIPE_PAYMENT_LINK_URL,
     highlight: true,
   },
 ];
